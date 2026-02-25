@@ -282,6 +282,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
+
+/* Animacion para la imagen */
 .banner img {
   animation: updown 3s linear infinite;
 }
