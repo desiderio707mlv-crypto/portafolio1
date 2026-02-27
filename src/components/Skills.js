@@ -55,7 +55,7 @@ return(
 
                         <div className="item">
                             <img src={meter1} alt="Image" />
-                            <h5> Web Developer</h5>
+                            <h5> Web dfsfs</h5>
                         </div>
                     </Carousel>
 
