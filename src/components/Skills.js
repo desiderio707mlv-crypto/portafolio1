@@ -1,10 +1,12 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import javaLogo from "../assets/img/javascript-logo.png";
+import react from "../assets/img/react-logo.png";
+import bostra from "../assets/img/Bootstrap_Logo.png";
+import css from "../assets/img/CSS.png";
 import colorSharp from "../assets/img/color-sharp.png";
+import html from "../assets/img/html.png";
 
 export const Skills = () => {
     const responsive = {
@@ -34,28 +36,33 @@ return(
                 <Col>
                 <div className="skill-bx">
                     <h2>
-                        Skills
+                        Habilidades
                     </h2>
                     <p>AQslkjdfa aslkjdfalsjdf aalsjflasjfd</p>
                     <Carousel responsive={responsive} infinite={true} className="skill-slider">
                         <div className="item">
-                            <img src={meter1} alt="Image" />
-                            <h5> Web Developer</h5>
+                            <img src={javaLogo} alt="Image" />
+                            <h5>JavaScript</h5>
                         </div>
 
                         <div className="item">
-                            <img src={meter2} alt="Image" />
-                            <h5> Brand Identity</h5>
+                            <img src={react} alt="Image" />
+                            <h5>React</h5>
                         </div>
 
                         <div className="item">
-                            <img src={meter3} alt="Image" />
-                            <h5> Logo Designer</h5>
+                            <img src={bostra} alt="Image" />
+                            <h5>Bootstrap</h5>
                         </div>
 
                         <div className="item">
-                            <img src={meter1} alt="Image" />
-                            <h5> Web dfsfs</h5>
+                            <img src={css} alt="Image" />
+                            <h5>CSS</h5>
+                        </div>
+
+                        <div className="item">
+                            <img src={html} alt="Image" />
+                            <h5>HTML</h5>
                         </div>
                     </Carousel>
 

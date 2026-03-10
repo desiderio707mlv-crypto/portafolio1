@@ -6,12 +6,13 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import proyectoPilly from "../assets/img/proyectoPilly.png";
 export const Projects = () => {
     const projects = [
         {
-            title: 'Business Startup',
-            description : "Desing & Development",
-            imgUrl: projImg1,
+            title: 'Check-Tilla',
+            description : "Registro de Medicinas",
+            imgUrl: proyectoPilly,
         },
 
         {
@@ -31,12 +32,12 @@ export const Projects = () => {
             <Container>
                 <Row>
                     <Col>
-                        <h2>Projects</h2>
+                        <h2>Proyectos</h2>
                         <p>LASLFAS Aasldfja asfd alfjaksldf asfd aljdfalkfd</p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                             <Nav.Item>
-                                <Nav.Link eventKey="first">Tab One</Nav.Link>
+                                <Nav.Link eventKey="first">Apps Webs</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="second">Tab Two</Nav.Link>

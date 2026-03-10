@@ -12,7 +12,7 @@ export const Banner = () => {
 
     const [isDeleting, setIsDeleting] = useState(false); /*Función: Es un interruptor (booleano) que indica si la máquina está escribiendo o borrando.*/
 
-    const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer"] /*Es el diccionario o lista de palabras que quieres que se turnen en la pantalla.*/
+    const toRotate = [ "Desarrolladora Web", "Diseñadora Web", "Diseñadora UI/UX"] /*Es el diccionario o lista de palabras que quieres que se turnen en la pantalla.*/
 
     const [text, setText] = useState(''); /*Es lo que el usuario ve en la pantalla en cada milisegundo.*/
 
@@ -56,10 +56,11 @@ export const Banner = () => {
                 <Row className="aling-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{'Hi Im --- '}<span className="wrap"> {text} </span></h1>
-                        <p> SOBRE MI</p>
-                        <button onClick={() => console.log('connect')}>dasda<ArrowRightCircle size={25}></ArrowRightCircle></button>
-                    
+                        <h1>{'Marina Desiderio'}<span className="wrap"> {text} </span></h1>
+                        <p><strong>desiderio707mlv@gmail.com</strong></p>
+
+                        <p> Soy estudiante de Ingeniería en Ciencias de la Computación. Me considero una aprendiz constante; actualmente busco profundizar en nuevas áreas del desarrollo para complementar mi formación técnica y aportar soluciones innovadoras en cada proyecto.</p>
+                       
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Headder Img" />
