@@ -8,8 +8,9 @@ import css from "../assets/img/CSS.png";
 import colorSharp from "../assets/img/color-sharp.png";
 import html from "../assets/img/html.png";
 
+
 export const Skills = () => {
-    const responsive = {
+   const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
@@ -29,49 +30,41 @@ export const Skills = () => {
   }
 };
 
-return(
-    <section className="Skill" id="skills">
+  return (
+    <section className="skill" id="skills">
         <Container>
             <Row>
                 <Col>
-                <div className="skill-bx">
-                    <h2>
-                        Habilidades
-                    </h2>
-                    <p>AQslkjdfa aslkjdfalsjdf aalsjflasjfd</p>
-                    <Carousel responsive={responsive} infinite={true} className="skill-slider">
-                        <div className="item">
-                            <img src={javaLogo} alt="Image" />
-                            <h5>JavaScript</h5>
-                        </div>
-
-                        <div className="item">
-                            <img src={react} alt="Image" />
-                            <h5>React</h5>
-                        </div>
-
-                        <div className="item">
-                            <img src={bostra} alt="Image" />
-                            <h5>Bootstrap</h5>
-                        </div>
-
-                        <div className="item">
-                            <img src={css} alt="Image" />
-                            <h5>CSS</h5>
-                        </div>
-
-                        <div className="item">
-                            <img src={html} alt="Image" />
-                            <h5>HTML</h5>
-                        </div>
-                    </Carousel>
-
-                </div>
+                    <div className="skill-bx">
+                        <h2>Habilidades</h2>
+                        <p>Estas son las tecnologías con las que he trabajado para crear soluciones web modernas y eficientes.</p>
+                        <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                            <div className="item">
+                                <img src={javaLogo} alt="JavaScript" />
+                                <h5>JavaScript</h5>
+                            </div>
+                            <div className="item">
+                                <img src={react} alt="React" />
+                                <h5>React</h5>
+                            </div>
+                            <div className="item">
+                                <img src={bostra} alt="Bootstrap" />
+                                <h5>Bootstrap</h5>
+                            </div>
+                            <div className="item">
+                                <img src={css} alt="CSS" />
+                                <h5>CSS</h5>
+                            </div>
+                            <div className="item">
+                                <img src={html} alt="HTML" />
+                                <h5>HTML</h5>
+                            </div>
+                        </Carousel>
+                    </div>
                 </Col>
             </Row>
         </Container>
-        <img className="background-image-left" src = {colorSharp}/>
+        <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
-)
-
+  )
 }
