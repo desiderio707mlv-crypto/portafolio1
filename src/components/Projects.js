@@ -17,7 +17,7 @@ export const Projects = () => {
             imgUrl: proyectoPilly,
         },
 
-        {
+        /*{
             title: 'Business Startup',
             description : "Desing & Development",
             imgUrl: projImg2,
@@ -27,7 +27,7 @@ export const Projects = () => {
             title: 'Business Startup',
             description : "Desing & Development",
             imgUrl: projImg3,
-        },
+        },*/
 
        
         
@@ -102,7 +102,7 @@ export const Projects = () => {
 
                                 {/* Tercer Tab */}
                                 <Tab.Pane eventKey="third">
-                                    <p>afadfa fasfasfa</p>
+                                    <p>Nada por aquí</p>
                                 </Tab.Pane>
                                 </TabContent>
                             </Tab.Container>
