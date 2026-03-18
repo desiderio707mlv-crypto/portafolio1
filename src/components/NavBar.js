@@ -49,6 +49,12 @@ export const NavBar = () => {
                 <a href="https://www.linkedin.com/in/marina-desiderio-vergara-b97a613b2/"><img src={navIcon1} alt=""/></a>
                 
             </div>
+
+            <button 
+                className="vvd" 
+                onClick={() => window.open('https://www.canva.com/design/DAHEPOWtmic/GaLubeNbknXCv_69x3ZxIQ/edit?utm_content=DAHEPOWtmic&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton', '_blank')}>
+                <span>Currículum</span>
+            </button>
             
           </span>
         </Navbar.Collapse>
