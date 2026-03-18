@@ -36,8 +36,8 @@ export const Projects = () => {
     const projects2 = [
         
         {
-            title: 'Logic Pulse Counter',
-            description : "Contador decimal de 2 dígitos mediante lógica digital pura y displays 7 segmentos.",
+            title: '4-Bit Arithmetic Unit',
+            description : "Unidad de resta binaria mediante complemento a dos y gestión de acarreo (Carry).",
             imgUrl: electronica1,
         },
 
