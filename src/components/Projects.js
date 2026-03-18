@@ -6,9 +6,15 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+
 import electronica1 from "../assets/img/BCD.jpeg";
 import electronica2 from "../assets/img/sistema_calor.jpeg";
+
 import proyectoPilly from "../assets/img/proyectoPilly.png";
+
+import certificado1 from "../assets/img/Certificado_AWS.png";
+import certificado2 from "../assets/img/Certificado_HackingEtico.png";
+
 export const Projects = () => {
     const projects = [
         {
@@ -48,13 +54,32 @@ export const Projects = () => {
         },
         
     ];
+
+    const projects3 = [
+
+       {
+            title: 'AWS & IA Generativa',
+            description: "Capacitación en despliegue de infraestructura en la nube (AWS) mediante Inteligencia Artificial Generativa y optimización de flujos tecnológicos.",
+            imgUrl: certificado1,
+        },
+
+        {
+            title: 'Hacking Ético',
+            description: "Certificación en fundamentos de ciberseguridad, identificación de vulnerabilidades y técnicas de defensa en entornos controlados.",
+            imgUrl: certificado2,
+        },
+
+        
+        
+    ];
+
     return(
         <section className="project" id="projects">
             <Container>
                 <Row>
                     <Col>
                         <h2>Proyectos</h2>
-                        <p>LASLFAS Aasldfja asfd alfjaksldf asfd aljdfalkfd</p>
+                        <p>Explora una muestra de mi trabajo</p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
@@ -65,7 +90,7 @@ export const Projects = () => {
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link eventKey="third">
-                                    Tab Three
+                                    Certificados
                                     </Nav.Link>
                                 </Nav.Item>
                                 </Nav>
@@ -88,7 +113,6 @@ export const Projects = () => {
                                 {/* Segundo Tab: Proyectos de Electrónica */}
                                 <Tab.Pane eventKey="second">
                                     <Row>
-                                    {/* Cambiamos 'projects' por 'projects2' para usar el segundo arreglo */}
                                     {projects2.map((project, index) => {
                                         return (
                                         <ProjectCard
@@ -100,9 +124,19 @@ export const Projects = () => {
                                     </Row>
                                 </Tab.Pane>
 
-                                {/* Tercer Tab */}
+                                {/* Tercer Tab: certificados */}
                                 <Tab.Pane eventKey="third">
-                                    <p>Nada por aquí</p>
+                                    
+                                    <Row>
+                                    {projects3.map((project, index) => {
+                                        return (
+                                        <ProjectCard
+                                            key={index}
+                                            {...project}
+                                        />
+                                        )
+                                    })}
+                                    </Row>
                                 </Tab.Pane>
                                 </TabContent>
                             </Tab.Container>
