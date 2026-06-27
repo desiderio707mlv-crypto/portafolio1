@@ -69,7 +69,7 @@ export const Projects = () => {
 
         {
             title: 'Workshop "Crea tu primera aplicación con Gen AI en AWS"',
-            description: "--",
+            description: "Desarrollo práctico de una aplicación utilizando servicios de inteligencia artificial generativa (Gen AI) en la nube de AWS.",
             imgUrl: certificado5,
         },
 
