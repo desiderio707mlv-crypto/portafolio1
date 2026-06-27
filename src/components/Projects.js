@@ -74,13 +74,13 @@ export const Projects = () => {
 
         {
             title: 'Introducción a Cisco Packet Tracer',
-            description: "---",
+            description: "Introducción práctica al uso de la herramienta de simulación de redes Cisco Packet Tracer y sus componentes.",
             imgUrl: certificado3,
         },
 
         {
             title: 'Exploración de redes con Cisco Packet Tracer',
-            description: "--.",
+            description: "Modelado, configuración y exploración avanzada de arquitecturas de red mediante Cisco Packet Tracer.",
             imgUrl: certificado4,
         },
 
