@@ -15,6 +15,9 @@ import proyectoPilly from "../assets/img/proyectoPilly.png";
 import certificado1 from "../assets/img/Certificado_AWS.png";
 import certificado2 from "../assets/img/Certificado_HackingEtico.png";
 
+import certificado3 from "../assets/img/Exploración_Redes_CISCO_PT.jpg";
+import certificado4 from "../assets/img/Introducción_CISCO_PT.jpg";
+
 export const Projects = () => {
     const projects = [
         {
@@ -66,6 +69,18 @@ export const Projects = () => {
         {
             title: 'Hacking Ético',
             description: "Certificación en fundamentos de ciberseguridad, identificación de vulnerabilidades y técnicas de defensa en entornos controlados.",
+            imgUrl: certificado2,
+        },
+
+        {
+            title: 'Introducción a Cisco Packet Tracer',
+            description: "---",
+            imgUrl: certificado2,
+        },
+
+        {
+            title: 'Exploración de redes con Cisco Packet Tracer',
+            description: "--.",
             imgUrl: certificado2,
         },
 
