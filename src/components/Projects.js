@@ -75,13 +75,13 @@ export const Projects = () => {
         {
             title: 'Introducción a Cisco Packet Tracer',
             description: "---",
-            imgUrl: certificado2,
+            imgUrl: certificado3,
         },
 
         {
             title: 'Exploración de redes con Cisco Packet Tracer',
             description: "--.",
-            imgUrl: certificado2,
+            imgUrl: certificado4,
         },
 
         
