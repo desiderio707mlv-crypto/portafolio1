@@ -17,6 +17,7 @@ import certificado2 from "../assets/img/Certificado_HackingEtico.png";
 
 import certificado3 from "../assets/img/Exploración_Redes_CISCO_PT.jpg";
 import certificado4 from "../assets/img/Introducción_CISCO_PT.jpg";
+import certificado5 from "../assets/img/Workshop AWS certificado 2.png";
 
 export const Projects = () => {
     const projects = [
@@ -64,6 +65,12 @@ export const Projects = () => {
             title: 'AWS & IA Generativa',
             description: "Capacitación en despliegue de infraestructura en la nube (AWS) mediante Inteligencia Artificial Generativa y optimización de flujos tecnológicos.",
             imgUrl: certificado1,
+        },
+
+        {
+            title: 'Workshop "Crea tu primera aplicación con Gen AI en AWS"',
+            description: "--",
+            imgUrl: certificado5,
         },
 
         {
