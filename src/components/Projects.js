@@ -123,96 +123,76 @@ export const Projects = () => {
     return(
         <section className="project" id="projects">
             <Container>
-                <Row>
-                    <Col>
-                        <h2>Proyectos</h2>
-                        <p>Explora una muestra de mi trabajo</p>
-                        <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                            <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                                <Nav.Item>
-                                    <Nav.Link eventKey="first">Apps Webs</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="second">Proyectos de Electrónica</Nav.Link>
-                                </Nav.Item>
-                                    <Nav.Link eventKey="third">
-                                    Certificados
-                                    </Nav.Link>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="four">Reconocimientos</Nav.Link>
-                                </Nav.Item>
-                                
-                                
-                                
-                                </Nav>
-                                <TabContent>
+    <Row>
+        <Col>
+            <h2>Proyectos</h2>
+            <p>Explora una muestra de mi trabajo</p>
+            <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                
+                {/* Navegación de Pestañas */}
+                <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                    <Nav.Item>
+                        <Nav.Link eventKey="first">Apps Webs</Nav.Link>
+                    </Nav.Item>
+                    
+                    <Nav.Item>
+                        <Nav.Link eventKey="second">Proyectos de Electrónica</Nav.Link>
+                    </Nav.Item>
+                    
+                    {/* CORRECCIÓN: Se agregó <Nav.Item> alrededor de Certificados */}
+                    <Nav.Item>
+                        <Nav.Link eventKey="third">Certificados</Nav.Link>
+                    </Nav.Item>
+                    
+                    <Nav.Item>
+                        <Nav.Link eventKey="four">Reconocimientos</Nav.Link>
+                    </Nav.Item>
+                </Nav>
 
-                                {/* Primer Tab: Apps Webs */}
-                                <Tab.Pane eventKey="first">
-                                    <Row>
-                                    {projects.map((project, index) => {
-                                        return (
-                                        <ProjectCard
-                                            key={index}
-                                            {...project}
-                                        />
-                                        )
-                                    })}
-                                    </Row>
-                                </Tab.Pane>
+                {/* Contenido de las Pestañas */}
+                <Tab.Content>
+                    
+                    {/* Primer Tab: Apps Webs */}
+                    <Tab.Pane eventKey="first">
+                        <Row>
+                            {projects.map((project, index) => (
+                                <ProjectCard key={index} {...project} />
+                            ))}
+                        </Row>
+                    </Tab.Pane>
 
-                                {/* Segundo Tab: Proyectos de Electrónica */}
-                                <Tab.Pane eventKey="second">
-                                    <Row>
-                                    {projects2.map((project, index) => {
-                                        return (
-                                        <ProjectCard
-                                            key={index}
-                                            {...project}
-                                        />
-                                        )
-                                    })}
-                                    </Row>
-                                </Tab.Pane>
+                    {/* Segundo Tab: Proyectos de Electrónica */}
+                    <Tab.Pane eventKey="second">
+                        <Row>
+                            {projects2.map((project, index) => (
+                                <ProjectCard key={index} {...project} />
+                            ))}
+                        </Row>
+                    </Tab.Pane>
 
-                                {/* Tercer Tab: certificados */}
-                                <Tab.Pane eventKey="third">
-                                    
-                                    <Row>
-                                    {projects3.map((project, index) => {
-                                        return (
-                                        <ProjectCard
-                                            key={index}
-                                            {...project}
-                                        />
-                                        )
-                                    })}
-                                    </Row>
-                                </Tab.Pane>
-                                <Tab.Pane eventKey="four">
-                                    
-                                    <Row>
-                                    {projects4.map((project, index) => {
-                                        return (
-                                        <ProjectCard
-                                            key={index}
-                                            {...project}
-                                        />
-                                        )
-                                    })}
-                                    </Row>
-                                </Tab.Pane>
+                    {/* Tercer Tab: Certificados */}
+                    <Tab.Pane eventKey="third">
+                        <Row>
+                            {projects3.map((project, index) => (
+                                <ProjectCard key={index} {...project} />
+                            ))}
+                        </Row>
+                    </Tab.Pane>
 
+                    {/* Cuarto Tab: Reconocimientos */}
+                    <Tab.Pane eventKey="four">
+                        <Row>
+                            {projects4.map((project, index) => (
+                                <ProjectCard key={index} {...project} />
+                            ))}
+                        </Row>
+                    </Tab.Pane>
 
-
-
-
-
-                                </TabContent>
-                            </Tab.Container>
-                    </Col>
-                </Row>
-            </Container>
+                </Tab.Content>
+            </Tab.Container>
+        </Col>
+    </Row>
+</Container>
             <img className="background-image-right" src =  {colorSharp2}></img>
         </section>
     )
