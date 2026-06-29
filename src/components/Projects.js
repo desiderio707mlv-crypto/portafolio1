@@ -124,76 +124,81 @@ export const Projects = () => {
         <section className="project" id="projects">
             <Container>
     <Row>
-        <Col>
-            <h2>Proyectos</h2>
-            <p>Explora una muestra de mi trabajo</p>
-            <Tab.Container id="projects-tabs" defaultActiveKey="first">
+    <Col>
+        <h2>Proyectos</h2>
+        <p>Explora una muestra de mi trabajo</p>
+        <Tab.Container id="projects-tabs" defaultActiveKey="first">
+            
+            {/* Navegación de Pestañas */}
+            {/* CORRECCIÓN 1: Se cambió a justify-content-center */}
+            <Nav 
+                variant="pills" 
+                className="nav-pills mb-5 justify-content-center flex-nowrap overflow-x-auto" 
+                id="pills-tab" 
+                style={{ whiteSpace: 'nowrap' }}
+            >
+                {/* CORRECCIÓN 2: Se eliminó el <Nav> vacío que estaba aquí estorbando */}
+
+                <Nav.Item>
+                    <Nav.Link eventKey="first">Apps Webs</Nav.Link>
+                </Nav.Item>
                 
-                {/* Navegación de Pestañas */}
-                <Nav variant="pills" className="nav-pills mb-5 justify-content-start flex-nowrap overflow-x-auto" id="pills-tab" style={{ whiteSpace: 'nowrap' }}>
+                <Nav.Item>
+                    <Nav.Link eventKey="second">Proyectos de Electrónica</Nav.Link>
+                </Nav.Item>
+                
+                <Nav.Item>
+                    <Nav.Link eventKey="third">Certificados</Nav.Link>
+                </Nav.Item>
+                
+                <Nav.Item>
+                    <Nav.Link eventKey="four">Reconocimientos</Nav.Link>
+                </Nav.Item>
+            </Nav>
 
-                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center flex-nowrap" id="pills-tab"></Nav>
-                    <Nav.Item>
-                        <Nav.Link eventKey="first">Apps Webs</Nav.Link>
-                    </Nav.Item>
-                    
-                    <Nav.Item>
-                        <Nav.Link eventKey="second">Proyectos de Electrónica</Nav.Link>
-                    </Nav.Item>
-                    
-                    {/* CORRECCIÓN: Se agregó <Nav.Item> alrededor de Certificados */}
-                    <Nav.Item>
-                        <Nav.Link eventKey="third">Certificados</Nav.Link>
-                    </Nav.Item>
-                    
-                    <Nav.Item>
-                        <Nav.Link eventKey="four">Reconocimientos</Nav.Link>
-                    </Nav.Item>
-                </Nav>
+            {/* Contenido de las Pestañas */}
+            <Tab.Content>
+                
+                {/* Primer Tab: Apps Webs */}
+                <Tab.Pane eventKey="first">
+                    <Row>
+                        {projects.map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                        ))}
+                    </Row>
+                </Tab.Pane>
 
-                {/* Contenido de las Pestañas */}
-                <Tab.Content>
-                    
-                    {/* Primer Tab: Apps Webs */}
-                    <Tab.Pane eventKey="first">
-                        <Row>
-                            {projects.map((project, index) => (
-                                <ProjectCard key={index} {...project} />
-                            ))}
-                        </Row>
-                    </Tab.Pane>
+                {/* Segundo Tab: Proyectos de Electrónica */}
+                <Tab.Pane eventKey="second">
+                    <Row>
+                        {projects2.map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                        ))}
+                    </Row>
+                </Tab.Pane>
 
-                    {/* Segundo Tab: Proyectos de Electrónica */}
-                    <Tab.Pane eventKey="second">
-                        <Row>
-                            {projects2.map((project, index) => (
-                                <ProjectCard key={index} {...project} />
-                            ))}
-                        </Row>
-                    </Tab.Pane>
+                {/* Tercer Tab: Certificados */}
+                <Tab.Pane eventKey="third">
+                    <Row>
+                        {projects3.map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                        ))}
+                    </Row>
+                </Tab.Pane>
 
-                    {/* Tercer Tab: Certificados */}
-                    <Tab.Pane eventKey="third">
-                        <Row>
-                            {projects3.map((project, index) => (
-                                <ProjectCard key={index} {...project} />
-                            ))}
-                        </Row>
-                    </Tab.Pane>
+                {/* Cuarto Tab: Reconocimientos */}
+                <Tab.Pane eventKey="four">
+                    <Row>
+                        {projects4.map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                        ))}
+                    </Row>
+                </Tab.Pane>
 
-                    {/* Cuarto Tab: Reconocimientos */}
-                    <Tab.Pane eventKey="four">
-                        <Row>
-                            {projects4.map((project, index) => (
-                                <ProjectCard key={index} {...project} />
-                            ))}
-                        </Row>
-                    </Tab.Pane>
-
-                </Tab.Content>
-            </Tab.Container>
-        </Col>
-    </Row>
+            </Tab.Content>
+        </Tab.Container>
+    </Col>
+</Row>
 </Container>
             <img className="background-image-right" src =  {colorSharp2}></img>
         </section>
