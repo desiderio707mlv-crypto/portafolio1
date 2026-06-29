@@ -130,7 +130,9 @@ export const Projects = () => {
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
                 
                 {/* Navegación de Pestañas */}
-                <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center flex-nowrap" id="pills-tab">
+
+                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center flex-nowrap" id="pills-tab"></Nav>
                     <Nav.Item>
                         <Nav.Link eventKey="first">Apps Webs</Nav.Link>
                     </Nav.Item>
