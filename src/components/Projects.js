@@ -19,6 +19,8 @@ import certificado3 from "../assets/img/Exploración_Redes_CISCO_PT.jpg";
 import certificado4 from "../assets/img/Introducción_CISCO_PT.jpg";
 import certificado5 from "../assets/img/Workshop AWS certificado 2.png";
 
+import certificado6 from "../assets/img/PUA_DESIDERIO VERGARA UA_page-0001.jpg";
+
 export const Projects = () => {
     const projects = [
         {
@@ -95,6 +97,29 @@ export const Projects = () => {
         
     ];
 
+    const projects4 = [
+        {
+            title: 'Premio UA',
+            description : "Por destacadas calificaciones, durante el período 2025-2026, el premio Unidad Académica de la carrera Ingeniería en Ciencias de la Computación",
+            imgUrl: certificado6,
+        },
+
+        /*{
+            title: 'Business Startup',
+            description : "Desing & Development",
+            imgUrl: projImg2,
+        },
+
+        {
+            title: 'Business Startup',
+            description : "Desing & Development",
+            imgUrl: projImg3,
+        },*/
+
+       
+        
+    ];
+
     return(
         <section className="project" id="projects">
             <Container>
@@ -110,11 +135,15 @@ export const Projects = () => {
                                 <Nav.Item>
                                     <Nav.Link eventKey="second">Proyectos de Electrónica</Nav.Link>
                                 </Nav.Item>
-                                <Nav.Item>
                                     <Nav.Link eventKey="third">
                                     Certificados
                                     </Nav.Link>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="four">Reconocimientos</Nav.Link>
                                 </Nav.Item>
+                                
+                                
+                                
                                 </Nav>
                                 <TabContent>
 
@@ -160,6 +189,25 @@ export const Projects = () => {
                                     })}
                                     </Row>
                                 </Tab.Pane>
+                                <Tab.Pane eventKey="four">
+                                    
+                                    <Row>
+                                    {projects4.map((project, index) => {
+                                        return (
+                                        <ProjectCard
+                                            key={index}
+                                            {...project}
+                                        />
+                                        )
+                                    })}
+                                    </Row>
+                                </Tab.Pane>
+
+
+
+
+
+
                                 </TabContent>
                             </Tab.Container>
                     </Col>
