@@ -130,7 +130,7 @@ export const Projects = () => {
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
                 
                 {/* Navegación de Pestañas */}
-                <Nav variant="pills" className="nav-pills mb-5 flex-nowrap nav-fill" id="pills-tab">
+                <Nav variant="pills" className="nav-pills mb-5 justify-content-start flex-nowrap overflow-x-auto" id="pills-tab" style={{ whiteSpace: 'nowrap' }}>
 
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center flex-nowrap" id="pills-tab"></Nav>
                     <Nav.Item>
