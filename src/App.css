@@ -30,7 +30,16 @@
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Resplandor suave */
 }
 
+/* 1. Forzamos a que todas las pestañas tengan su borde normal, pero le quitamos el derecho para no hacer líneas dobles */
+.project .nav.nav-pills .nav-item .nav-link {
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    border-right: none !important; 
+}
 
+/* 2. Le devolvemos el borde derecho ÚNICAMENTE a la última pestaña para cerrar el diseño circular */
+.project .nav.nav-pills .nav-item:last-child .nav-link {
+    border-right: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
 /************ Default Css ************/
 * {
   margin: 0;
