@@ -131,30 +131,30 @@ export const Projects = () => {
             
             {/* Navegación de Pestañas */}
             {/* CORRECCIÓN 1: Se cambió a justify-content-center */}
-            <Nav 
-                variant="pills" 
-                className="nav-pills mb-5 justify-content-center flex-nowrap overflow-x-auto" 
-                id="pills-tab" 
-                style={{ whiteSpace: 'nowrap' }}
-            >
-                {/* CORRECCIÓN 2: Se eliminó el <Nav> vacío que estaba aquí estorbando */}
-
-                <Nav.Item>
-                    <Nav.Link eventKey="first">Apps Webs</Nav.Link>
-                </Nav.Item>
-                
-                <Nav.Item>
-                    <Nav.Link eventKey="second">Proyectos de Electrónica</Nav.Link>
-                </Nav.Item>
-                
-                <Nav.Item>
-                    <Nav.Link eventKey="third">Certificados</Nav.Link>
-                </Nav.Item>
-                
-                <Nav.Item>
-                    <Nav.Link eventKey="four">Reconocimientos</Nav.Link>
-                </Nav.Item>
-            </Nav>
+            {/* Navegación de Pestañas */}
+                <Nav 
+                    variant="pills" 
+                    // Agregamos 'nav-fill' al final de esta línea
+                    className="nav-pills mb-5 justify-content-center flex-nowrap overflow-x-auto nav-fill" 
+                    id="pills-tab" 
+                    style={{ whiteSpace: 'nowrap' }}
+                >
+                    <Nav.Item>
+                        <Nav.Link eventKey="first">Apps Webs</Nav.Link>
+                    </Nav.Item>
+                    
+                    <Nav.Item>
+                        <Nav.Link eventKey="second">Proyectos de Electrónica</Nav.Link>
+                    </Nav.Item>
+                    
+                    <Nav.Item>
+                        <Nav.Link eventKey="third">Certificados</Nav.Link>
+                    </Nav.Item>
+                    
+                    <Nav.Item>
+                        <Nav.Link eventKey="four">Reconocimientos</Nav.Link>
+                    </Nav.Item>
+                </Nav>
 
             {/* Contenido de las Pestañas */}
             <Tab.Content>
