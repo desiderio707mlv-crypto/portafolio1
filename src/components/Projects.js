@@ -142,6 +142,10 @@ export const Projects = () => {
                     <Nav.Item>
                         <Nav.Link eventKey="first">Apps Webs</Nav.Link>
                     </Nav.Item>
+
+                    <Nav.Item>
+                        <Nav.Link eventKey="four">Reconocimientos</Nav.Link>
+                    </Nav.Item>
                     
                     <Nav.Item>
                         <Nav.Link eventKey="second">Proyectos de Electrónica</Nav.Link>
@@ -151,9 +155,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="third">Certificados</Nav.Link>
                     </Nav.Item>
                     
-                    <Nav.Item>
-                        <Nav.Link eventKey="four">Reconocimientos</Nav.Link>
-                    </Nav.Item>
+                    
                 </Nav>
 
             {/* Contenido de las Pestañas */}
