@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/portafolio1/static/css/main.a2b7e881.css",
+    "main.js": "/portafolio1/static/js/main.b6379634.js",
+    "static/js/453.6d1888c0.chunk.js": "/portafolio1/static/js/453.6d1888c0.chunk.js",
+    "static/media/banner-bg.png": "/portafolio1/static/media/banner-bg.d570a6d44102930542f1.png",
+    "static/media/color-sharp.png": "/portafolio1/static/media/color-sharp.bea361cfef80fefc2d1e.png",
+    "static/media/color-sharp2.png": "/portafolio1/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
+    "static/media/Certificado_HackingEtico.png": "/portafolio1/static/media/Certificado_HackingEtico.be5dafe513367a687def.png",
+    "static/media/proyectoPilly.png": "/portafolio1/static/media/proyectoPilly.2a50c409bd562b6df1fe.png",
+    "static/media/BCD.jpeg": "/portafolio1/static/media/BCD.61c4feef2c00fcefa728.jpeg",
+    "static/media/PUA_DESIDERIO VERGARA UA_page-0001.jpg": "/portafolio1/static/media/PUA_DESIDERIO VERGARA UA_page-0001.9a7a7abfe896b6410305.jpg",
+    "static/media/sistema_calor.jpeg": "/portafolio1/static/media/sistema_calor.ded99e93c4f88092493d.jpeg",
+    "static/media/Certificado_AWS.png": "/portafolio1/static/media/Certificado_AWS.e0489a463756af471c71.png",
+    "static/media/Workshop AWS certificado 2.png": "/portafolio1/static/media/Workshop AWS certificado 2.3af5b6ee2d792fc24d1b.png",
+    "static/media/header-img.svg": "/portafolio1/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg",
+    "static/media/Exploración_Redes_CISCO_PT.jpg": "/portafolio1/static/media/Exploración_Redes_CISCO_PT.19e8a9880bf03c418805.jpg",
+    "static/media/Introducción_CISCO_PT.jpg": "/portafolio1/static/media/Introducción_CISCO_PT.0ef0b23b22175acd304d.jpg",
+    "static/media/CentraNo2-Bold.ttf": "/portafolio1/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/portafolio1/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/portafolio1/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/footer-bg.png": "/portafolio1/static/media/footer-bg.7bd67c0f73571d0acc02.png",
+    "static/media/Grow-Year.ttf": "/portafolio1/static/media/Grow-Year.8631d75c72c5993b3d44.ttf",
+    "static/media/html.png": "/portafolio1/static/media/html.d981410227757a14c999.png",
+    "static/media/Bootstrap_Logo.png": "/portafolio1/static/media/Bootstrap_Logo.fe1cf20bd1bc5e90e286.png",
+    "static/media/react-logo.png": "/portafolio1/static/media/react-logo.689fb9f7566ea095cd42.png",
+    "static/media/revicons.eot": "/portafolio1/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/portafolio1/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/portafolio1/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/logo.svg": "/portafolio1/static/media/logo.eaf3c0bc058e0ed6471ba20dc0af6da2.svg",
+    "static/media/nav-icon3.svg": "/portafolio1/static/media/nav-icon3.08b285abb8e118b52637efa5d65c5367.svg",
+    "index.html": "/portafolio1/index.html",
+    "static/media/nav-icon1.svg": "/portafolio1/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
+    "static/media/nav-icon2.svg": "/portafolio1/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
+    "main.a2b7e881.css.map": "/portafolio1/static/css/main.a2b7e881.css.map",
+    "main.b6379634.js.map": "/portafolio1/static/js/main.b6379634.js.map",
+    "453.6d1888c0.chunk.js.map": "/portafolio1/static/js/453.6d1888c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2b7e881.css",
+    "static/js/main.b6379634.js"
+  ]
+}
